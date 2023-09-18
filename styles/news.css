@@ -1,0 +1,46 @@
+body {
+    background: black;
+  }
+  /* CONTAINER WRAPPER STYLING */
+  .wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr;
+    grid-template-areas:
+      ". header header ."
+      ". content sidebar ."
+      ". footer footer. ";
+  }
+  
+  /* MAKING THE LAYOUT RESPONSIVE */
+  @media (max-width: 500px) {
+    .wrapper {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "sidebar"
+        "content"
+        "footer";
+    }
+  
+    .main-nav ul {
+      font-size: 1.5rem;
+    }
+  
+    .main-header {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .wrapper {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "content sidebar"
+        "footer footer";
+    }
+  
+    .main-header {
+      flex-direction: column;
+    }
+  }
