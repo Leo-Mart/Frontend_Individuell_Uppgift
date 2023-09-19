@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-around;
   border-left: 3px solid red;
+  margin-top: 0.5rem;
 }
 
 .footer-contact-links {
