@@ -18,9 +18,10 @@ body {
 }
 
 /* MAKING THE LAYOUT RESPONSIVE */
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .wrapper {
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-areas:
       "header"
       "sidebar"
@@ -31,23 +32,9 @@ body {
   .main-nav ul {
     font-size: 1.5rem;
   }
-
-  .main-header {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 700px) {
-  .wrapper {
-    display: grid;
-    grid-template-areas:
-      "header header"
-      "content sidebar"
-      "footer footer";
-  }
-
-  .main-header {
-    flex-direction: column;
+  /* Varför skriver inte denna över .main-sidebar klassen?*/
+  .main-sidebar {
+    margin-left: 0;
   }
 }
 
@@ -57,12 +44,13 @@ body {
 }
 
 .news-articles-container {
-  background: #272727;
+  background: #1b1b1b;
   border-left: 3px solid red;
   color: #cacaca;
 }
-
+/*Snyggare med bakgrund på hela containern eller på artiklar? Kan ju förvisso köra med båda?*/
 .news-article {
+  background: #272727;
   padding: 0.5rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid lightgrey;
