@@ -17,111 +17,7 @@ body {
     ". footer footer. ";
 }
 
-/* MAIN ARTICLE STYLING */
-.main-content {
-  grid-area: content;
-}
 
-.news-articles-container {
-  background: #1b1b1b;
-  color: #cacaca;
-}
-/*Snyggare med bakgrund på hela containern eller på artiklar? Kan ju förvisso köra med båda?*/
-.news-article {
-  background: #272727;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid lightgrey;
-  border-left: 3px solid red;
-  display: flex;
-  gap: 1rem;
-}
-
-.news-article:last-of-type {
-  border-bottom: none;
-}
-
-.news-article img {
-  margin-left: 0.5rem;
-  margin-bottom: 0.5rem;
-  max-width: 30rem;
-}
-
-.news-article a {
-  text-decoration: none;
-  color: black;
-  color: #cacaca;
-}
-
-.news-articles-text-container span {
-  margin-right: 0.5rem;
-}
-
-.news-article a:hover {
-  text-decoration: underline;
-}
-/*STYLING FOR LARGER NEWS-ARTICLE CONTAINER*/
-.news-article-large {
-  background: #272727;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid lightgrey;
-  border-left: 3px solid red;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.news-article-large img {
-  margin-left: 0.5rem;
-  margin-bottom: 0.5rem;
-  max-width: 100%;
-}
-
-.news-article-large a {
-  text-decoration: none;
-  color: black;
-  color: #cacaca;
-}
-
-.news-articles-text-container-large span {
-  margin-right: 0.5rem;
-}
-
-.news-article-large a:hover {
-  text-decoration: underline;
-}
-
-/* SIDEBAR STYLING */
-.main-sidebar {
-  grid-area: sidebar;
-  padding: 1rem;
-  max-height: 15rem;
-  margin-left: 0.5rem;
-  background: #272727;
-  overflow: auto;
-  color: #cacaca;
-  border-left: 3px solid red;
-}
-
-.main-sidebar h3 {
-  color: #cacaca;
-}
-
-.main-sidebar li {
-  list-style: none;
-  margin: 0.5rem;
-}
-
-.main-sidebar a {
-  text-decoration: none;
-  color: #cacaca;
-}
-
-.main-sidebar a:hover {
-  text-decoration: underline;
-  text-decoration-color: red;
-}
 
 /*RESPONSIVE */
 @media (max-width: 700px) {
@@ -143,5 +39,14 @@ body {
   Verkar som om det skall gå att fixa med specifity?*/
   .main-sidebar {
     margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .news-article img {
+    margin: 0;
+  }
+
+  .news-article {
+    flex-direction: column;
   }
 }

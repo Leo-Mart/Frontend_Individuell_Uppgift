@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/homepage.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/news-article.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+
+
     <!-- IMPORTING ICONS FROM FONT AWESOME-->
     <script
       src="https://kit.fontawesome.com/b4437118bd.js"
@@ -87,32 +91,68 @@
               <!-- Del av ett tag/arkiv system här. tanken är att trycka på nyhet tar användare till nyhetsarkivet
               samma sak med spel-industri taggen, tar användaren till ett arkiv med alla artiklar som är taggade så-->
               <a href=""><span>Nyhet</span></a>
-              <a href=""><span>Spel-industrin</span></a>
+              <a href=""><span>Spel-släpp</span></a>
               <span>Idag 15:34</span>
               <p>
-                Cyberpunk 2077 har fått sin expansion efter dryga 3 år av väntan.
-                Betygen var höga och CD Projekt Red verkar ha lyckats få spelet dit det skulle varit för 3 år sedan.
+                Cyberpunk 2077 har fått sin expansion efter dryga 3 år av
+                väntan. Betygen var höga och CD Projekt Red verkar ha lyckats få
+                spelet dit det skulle varit för 3 år sedan.
               </p>
             </div>
-          </article>          
+          </article>
+
+          <article class="news-article">
+            <a href=""><img src="images/elpaso.jpg" /></a>
+            <div class="news-articles-text-container">
+              <a href="">
+                <h3>El Paso, Elsewhere släppt.</h3>
+              </a>
+              <!-- Del av ett tag/arkiv system här. tanken är att trycka på nyhet tar användare till nyhetsarkivet
+              samma sak med spel-industri taggen, tar användaren till ett arkiv med alla artiklar som är taggade så-->
+              <a href=""><span>Nyhet</span></a>
+              <a href=""><span>Spel-släpp</span></a>
+              <span>Idag 15:34</span>
+              <p>
+                El Paso, Elsewhere har släppts till höga betyg. Spelet drar
+                inspiration från gamla klassiker som Max Payne men med lite
+                annan tappning.
+              </p>
+            </div>
+          </article>
         </div>
       </main>
 
       <!-- SIDEBAR WITH LASTEST NEWS-->
       <aside class="main-sidebar">
         <h3>Senaste Nytt</h3>
-        <div class="latest-news-sidebar">
+        <div>
           <ul>
-            <li><a href="newsitem.html">Baldur's Gate 3 slår rekord</a></li>
-            <li><a href="#">Stig Asmussen lämnar Respawn</a></li>
             <li>
-              <a href="#"
-                >Diablo 4 verkar ha tappat en stor del av sin spelarbas</a
-              >
+              <a href="newsitem.html">Baldur's Gate 3 slår rekord</a>
+              <span class="sidebar-time-stamp">Idag 16:40</span>
             </li>
-            <li><a href="#">Unity kommer ta betalt per installation</a></li>
-            <li><a href="#">Horizon: Forbidden west till PC?</a></li>
-            <li><a href="#">WH40k Rogue Trader släpps i december</a></li>
+            <li>
+              <a href="#">Stig Asmussen lämnar Respawn</a>
+              <span class="sidebar-time-stamp">Idag 16:40</span>
+            </li>
+            <li>
+              <a href="#">
+                Diablo 4 verkar ha tappat en stor del av sin spelarbas
+              </a>
+              <span class="sidebar-time-stamp">Idag 16:40</span>
+            </li>
+            <li>
+              <a href="#">Unity kommer ta betalt per installation</a>
+              <span class="sidebar-time-stamp">Idag 16:40</span>
+            </li>
+            <li>
+              <a href="#">Horizon: Forbidden west till PC?</a>
+              <span class="sidebar-time-stamp">Idag 16:40</span>
+            </li>
+            <li>
+              <a href="#">WH40k Rogue Trader släpps i december</a>
+              <span class="sidebar-time-stamp">Idag 16:40</span>
+            </li>
           </ul>
         </div>
       </aside>
@@ -151,4 +191,5 @@
 <!--TODO 
 En logga i navbar?
 eventuellt styla om navbar lite och kanske lite mer i footer
-fixa länkar och andra sidor-->
+dela upp stying lite i egna css filer. Typ en för news-article och en för large varianten osv
+-->
