@@ -14,7 +14,10 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
+  <!-- Lite generalla tankar/kommentarer. Mycket av layouten är grovt kopierad från fz.se
+  åtminstone de stora dragen. Jag skulle vilja ge mig in på en carousel med bilder men det blir nog bland det sista. 
+  har förstått att det ska gå att göra utan javascript men antar att det är lättare utan. 
+  Annars gillar jag tanken med de mindre artikel boxarna som bryts upp ibland av de större.-->
   <body>
     <!-- CONTAINER FOR THE LAYOUT-->
     <div class="wrapper">
@@ -33,199 +36,65 @@
       <!-- MAIN ARTICLE SECTION-->
       <main class="main-content">
         <div class="news-articles-container">
-          <!-- Lägga nyhetsartiklar i en egen class/container? enklare att styla dem och kanske att flytta runt dem-->
           <article class="news-article">
-            <a href="">
-              <img src="images/unity.png" />
-              <div class="news-articles-text-container">
+            <a href=""><img src="images/unity.png" /></a>
+            <div class="news-articles-text-container">
+              <a href="">
                 <h3>
                   Unity ändrar sin betalningsmetod, vill ta betalt per
                   installation
                 </h3>
-                <p>
-                  Unity vill börjar ta betalt för varje enskild installation.
-                  Utvecklare ryter ifrån.
-                </p>
-              </div>
-            </a>
-          </article>
-
-          <article class="news-article">
-            <a href="">
-              <img src="images/es6.jpg" />
-              <h3>Elder Scrolls 6 släpps tidigast 2026</h3>
+              </a>
+              <!-- Del av ett tag/arkiv system här. tanken är att trycka på nyhet tar användare till nyhetsarkivet
+              samma sak med spel-industri taggen, tar användaren till ett arkiv med alla artiklar som är taggade så-->
+              <a href=""><span>Nyhet</span></a>
+              <a href=""><span>Spel-industrin</span></a>
+              <span>Idag 15:34</span>
               <p>
-                Enligt uppgifter kommer Elder Scrolls 6 släppas tidigast 2026.
-                Mer eller mindre bekräftat att det kommer var exklusivt till PC
-                och Xbox.
+                Unity vill börjar ta betalt för varje enskild installation.
+                Utvecklare ryter ifrån.
               </p>
-            </a>
+            </div>
           </article>
 
           <article class="news-article">
-            <h3>NEWS HEADLINE HERE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              mauris risus, ullamcorper eu ornare eu, sollicitudin vel nisi.
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Aliquam mollis volutpat nibh eget
-              dignissim. Nam id elit ac eros suscipit facilisi
-            </p>
+            <a href=""><img src="images/es6.jpg" /></a>
+            <div class="news-articles-text-container">
+              <a href="">
+                <h3>Elder Scrolls 6 släpps tidigast 2026</h3>
+              </a>
+              <!-- Del av ett tag/arkiv system här. tanken är att trycka på nyhet tar användare till nyhetsarkivet
+              samma sak med spel-industri taggen, tar användaren till ett arkiv med alla artiklar som är taggade så-->
+              <a href=""><span>Nyhet</span></a>
+              <a href=""><span>Spel-industrin</span></a>
+              <span>Idag 15:34</span>
+              <p>
+                Efter Microsofts rejäla läcka i förra veckan har det uppdagat en
+                mängd ny information. Däribland att Elder Scrolls 6 förväntas
+                släppas tidigast 2026 och är planerat att vara exklusivt till PC
+                och xbox.
+              </p>
+            </div>
           </article>
-
-          <article class="news-article">
-            <h3>NEWS HEADLINE HERE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              mauris risus, ullamcorper eu ornare eu, sollicitudin vel nisi.
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Aliquam mollis volutpat nibh eget
-              dignissim. Nam id elit ac eros suscipit facilisi
-            </p>
-          </article>
-
-          <article class="news-article">
-            <h3>NEWS HEADLINE HERE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              mauris risus, ullamcorper eu ornare eu, sollicitudin vel nisi.
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Aliquam mollis volutpat nibh eget
-              dignissim. Nam id elit ac eros suscipit facilisi
-            </p>
-          </article>
-
-          <article class="news-article">
-            <h3>NEWS HEADLINE HERE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              mauris risus, ullamcorper eu ornare eu, sollicitudin vel nisi.
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Aliquam mollis volutpat nibh eget
-              dignissim. Nam id elit ac eros suscipit facilisi
-            </p>
-          </article>
-
-          <article class="news-article">
-            <h3>NEWS HEADLINE HERE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              mauris risus, ullamcorper eu ornare eu, sollicitudin vel nisi.
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Aliquam mollis volutpat nibh eget
-              dignissim. Nam id elit ac eros suscipit facilisi
-            </p>
-          </article>
-
-          <article class="news-article">
-            <h3>NEWS HEADLINE HERE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              mauris risus, ullamcorper eu ornare eu, sollicitudin vel nisi.
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Aliquam mollis volutpat nibh eget
-              dignissim. Nam id elit ac eros suscipit facilisi
-            </p>
-          </article>
-
-          <article class="news-article">
-            <h3>NEWS HEADLINE HERE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              mauris risus, ullamcorper eu ornare eu, sollicitudin vel nisi.
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Aliquam mollis volutpat nibh eget
-              dignissim. Nam id elit ac eros suscipit facilisi
-            </p>
-          </article>
-
-          <article class="news-article">
-            <h3>NEWS HEADLINE HERE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              mauris risus, ullamcorper eu ornare eu, sollicitudin vel nisi.
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Aliquam mollis volutpat nibh eget
-              dignissim. Nam id elit ac eros suscipit facilisi
-            </p>
-          </article>
-
-          <article class="news-article">
-            <h3>NEWS HEADLINE HERE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              mauris risus, ullamcorper eu ornare eu, sollicitudin vel nisi.
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Aliquam mollis volutpat nibh eget
-              dignissim. Nam id elit ac eros suscipit facilisi
-            </p>
-          </article>
-
-          <article class="news-article">
-            <h3>NEWS HEADLINE HERE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              mauris risus, ullamcorper eu ornare eu, sollicitudin vel nisi.
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Aliquam mollis volutpat nibh eget
-              dignissim. Nam id elit ac eros suscipit facilisi
-            </p>
-          </article>
-
-          <article class="news-article">
-            <h3>NEWS HEADLINE HERE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              mauris risus, ullamcorper eu ornare eu, sollicitudin vel nisi.
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Aliquam mollis volutpat nibh eget
-              dignissim. Nam id elit ac eros suscipit facilisi
-            </p>
-          </article>
-
-          <article class="news-article">
-            <h3>NEWS HEADLINE HERE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              mauris risus, ullamcorper eu ornare eu, sollicitudin vel nisi.
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Aliquam mollis volutpat nibh eget
-              dignissim. Nam id elit ac eros suscipit facilisi
-            </p>
-          </article>
-
-          <article class="news-article">
-            <h3>NEWS HEADLINE HERE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              mauris risus, ullamcorper eu ornare eu, sollicitudin vel nisi.
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Aliquam mollis volutpat nibh eget
-              dignissim. Nam id elit ac eros suscipit facilisi
-            </p>
-          </article>
-
-          <article class="news-article">
-            <h3>NEWS HEADLINE HERE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              mauris risus, ullamcorper eu ornare eu, sollicitudin vel nisi.
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Aliquam mollis volutpat nibh eget
-              dignissim. Nam id elit ac eros suscipit facilisi
-            </p>
-          </article>
-
-          <article class="news-article">
-            <h3>NEWS HEADLINE HERE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              mauris risus, ullamcorper eu ornare eu, sollicitudin vel nisi.
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Aliquam mollis volutpat nibh eget
-              dignissim. Nam id elit ac eros suscipit facilisi
-            </p>
-          </article>
+          <!-- Idén här var att bryta flödet med småboxar lite och så kan det användas för att sätta en spotlight på vissa tester eller nyheter som man tycker är viktiga eller stora
+          jag antar det är så de tänkt åtminstone :D-->
+          <article class="news-article-large">
+            <a href=""><img src="images/cp2077phantom.jpg" /></a>
+            <div class="news-articles-text-container-large">
+              <a href="">
+                <h3>Cyberpunk 2077 första, och ända, expansion släppt!</h3>
+              </a>
+              <!-- Del av ett tag/arkiv system här. tanken är att trycka på nyhet tar användare till nyhetsarkivet
+              samma sak med spel-industri taggen, tar användaren till ett arkiv med alla artiklar som är taggade så-->
+              <a href=""><span>Nyhet</span></a>
+              <a href=""><span>Spel-industrin</span></a>
+              <span>Idag 15:34</span>
+              <p>
+                Cyberpunk 2077 har fått sin expansion efter dryga 3 år av väntan.
+                Betygen var höga och CD Projekt Red verkar ha lyckats få spelet dit det skulle varit för 3 år sedan.
+              </p>
+            </div>
+          </article>          
         </div>
       </main>
 
