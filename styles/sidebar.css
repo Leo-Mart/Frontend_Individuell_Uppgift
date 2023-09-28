@@ -1,37 +1,36 @@
-
 /* SIDEBAR STYLING */
 .main-sidebar {
-    grid-area: sidebar;
-    padding: 1rem;
-    max-height: 15rem;
-    margin-left: 0.5rem;
-    background: #272727;
-    overflow: auto;
-    color: #cacaca;
-    border-left: 3px solid red;
-  }
-  
-  .main-sidebar h3 {
-    color: #cacaca;
-  }
-  
-  .main-sidebar li {
-    list-style: none;
-    margin: 0.5rem;
-  }
-  
-  .main-sidebar a {
-    text-decoration: none;
-    color: rgb(201, 201, 201);
-  }
-  
-  .main-sidebar a:hover {
-    text-decoration: underline;
-    text-decoration-color: red;
-  }
-  
-  .sidebar-time-stamp {
-    float: right;
-    font-size: 0.8rem;
-    color: rgba(201, 201, 201, 0.5);
-  }
+  grid-area: sidebar;
+  padding: 1rem;
+  max-height: 15rem;
+  margin-left: 0.5rem;
+  background: #272727;
+  overflow: auto;
+  color: #cacaca;
+  border-left: 3px solid red;
+}
+
+.main-sidebar h3 {
+  color: #cacaca;
+}
+
+.main-sidebar li {
+  list-style: none;
+  margin: 0.5rem;
+}
+
+.main-sidebar a {
+  text-decoration: none;
+  color: rgb(201, 201, 201);
+}
+
+.main-sidebar a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.sidebar-time-stamp {
+  float: right;
+  font-size: 0.8rem;
+  color: rgba(201, 201, 201, 0.5);
+}
