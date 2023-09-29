@@ -47,4 +47,8 @@ body {
   .news-article {
     flex-direction: column;
   }
+
+  .search-bar input {
+    width: 5rem;
+  }
 }

@@ -6,14 +6,18 @@
 .main-header {
   grid-area: header;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  height: 5rem;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
+  height: 7rem;
+  margin-bottom: 2rem;
 }
 
 .main-nav {
   width: 100%;
+  background: #272727;
+  border-left: 3px solid red;
+  height: 8rem;
+
 }
 
 .main-nav ul {
@@ -22,6 +26,7 @@
   justify-content: space-evenly;
   align-items: center;
   font-size: 2.5rem;
+  padding-top: 0.5rem;
 }
 
 .main-nav a {
@@ -30,7 +35,53 @@
   color: #cacaca;
 }
 
+.main-nav a.active {
+  text-decoration: overline underline;
+  text-decoration-color: red;
+}
+
 .main-nav a:hover {
   text-decoration: overline underline;
   text-decoration-color: red;
+}
+
+.topbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;    
+  margin: 1rem 0;
+  height: 3rem;
+}
+
+.top-bar-logo {
+  color: #cacaca;
+}
+
+.search-bar input {
+  border:none;
+  height: 1rem;
+}
+
+.search-bar i {
+  border: none;
+}
+
+.search-bar i:hover {
+  cursor: pointer;
+}
+
+.search-bar input::placeholder {
+  padding-left: 0.5rem;
+}
+
+.user-account-buttons a {
+  text-decoration: none;
+  color: #cacaca;
+  font-size: 1rem;
+}
+
+.user-account-buttons a:hover {
+  text-decoration: overline underline;
+  text-decoration-color: red;
+  
 }
