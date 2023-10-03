@@ -58,12 +58,19 @@
 }
 
 .search-bar input {
-  border:none;
-  height: 1rem;
+  border: none;
+  height: 1.2rem;
+  background-color: #cacaca;
 }
 
-.search-bar i {
+.search-bar button {
+  margin: 0;
+  padding: 0.15rem;
   border: none;
+  background: none;
+  background-color: #cacaca;
+  
+  
 }
 
 .search-bar i:hover {
@@ -78,10 +85,13 @@
   text-decoration: none;
   color: #cacaca;
   font-size: 1rem;
+  background-color: rgb(39, 39, 39, 0.5);
+  padding: 0.5rem;
+  border-radius: 5px;
+
 }
 
 .user-account-buttons a:hover {
-  text-decoration: overline underline;
-  text-decoration-color: red;
+  background-color: rgb(39, 39, 39, 1);
   
 }

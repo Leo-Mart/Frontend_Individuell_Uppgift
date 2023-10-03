@@ -46,6 +46,20 @@
 .news-article a:hover {
   text-decoration: underline;
 }
+
+.article-details {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.article-details-time {
+  color: rgba(201, 201, 201, 0.5);
+}
+
+.article-details-main-tag {
+  color: red;
+}
 /*STYLING FOR LARGER NEWS-ARTICLE CONTAINER*/
 .news-article-large {
   background: #272727;

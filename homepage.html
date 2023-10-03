@@ -18,9 +18,9 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <!-- Lite generalla tankar/kommentarer. Mycket av layouten är grovt kopierad från fz.se
+  <!-- Lite generalla tankar/kommentarer. Mycket av layouten är kopierad från fz.se
   åtminstone de stora dragen. Jag skulle vilja ge mig in på en carousel med bilder men det blir nog bland det sista. 
-  har förstått att det ska gå att göra utan javascript men antar att det är lättare utan. 
+  har förstått att det ska gå att göra utan javascript men antar att det är lättare med. 
   Annars gillar jag tanken med de mindre artikel boxarna som bryts upp ibland av de större.-->
   <body>
     <!-- CONTAINER FOR THE LAYOUT-->
@@ -59,18 +59,21 @@
             <div class="news-articles-text-container">
               <a href="">
                 <h3>
-                  Unity ändrar sin betalningsmetod, vill ta betalt per
-                  installation
+                  Unity kommer med nya ändrningar till sin betalningsmetod.
                 </h3>
               </a>
-              <!-- Del av ett tag/arkiv system här. tanken är att trycka på nyhet tar användare till nyhetsarkivet
-              samma sak med spel-industri taggen, tar användaren till ett arkiv med alla artiklar som är taggade så-->
-              <a href=""><span>Nyhet</span></a>
-              <a href=""><span>Spel-industrin</span></a>
-              <span class="sidebar-time-stamp">Idag 15:34</span>
+              <div class="article-details">
+                <a href=""
+                  ><span class="article-details-main-tag">Nyhet</span></a
+                >
+                <a href=""><span>Spel-industrin</span></a>
+                <span class="article-details-time">Idag 15:34</span>
+              </div>
               <p>
-                Unity vill börjar ta betalt för varje enskild installation.
-                Utvecklare ryter ifrån.
+                Efter att Unity släppt en bomb i knät på utvecklare för någon
+                vecka sedan har de nu kommit ut med en ny version av sin
+                betalningsmetod. De nya ändringarna verkar lovande men frågan är
+                om skadan är reden skedd?
               </p>
             </div>
           </article>
@@ -81,11 +84,13 @@
               <a href="">
                 <h3>Elder Scrolls 6 släpps tidigast 2026</h3>
               </a>
-              <!-- Del av ett tag/arkiv system här. tanken är att trycka på nyhet tar användare till nyhetsarkivet
-              samma sak med spel-industri taggen, tar användaren till ett arkiv med alla artiklar som är taggade så-->
-              <a href=""><span>Nyhet</span></a>
-              <a href=""><span>Spel-industrin</span></a>
-              <span class="sidebar-time-stamp">Idag 15:34</span>
+              <div class="article-details">
+                <a href=""
+                  ><span class="article-details-main-tag">Nyhet</span></a
+                >
+                <a href=""><span>Spel-industrin</span></a>
+                <span class="article-details-time">Idag 15:34</span>
+              </div>
               <p>
                 Efter Microsofts rejäla läcka i förra veckan har det uppdagat en
                 mängd ny information. Däribland att Elder Scrolls 6 förväntas
@@ -94,19 +99,20 @@
               </p>
             </div>
           </article>
-          <!-- Idén här var att bryta flödet med småboxar lite och så kan det användas för att sätta en spotlight på vissa tester eller nyheter som man tycker är viktiga eller stora
-          jag antar det är så de tänkt åtminstone :D-->
+
           <article class="news-article-large">
             <a href=""><img src="images/cp2077phantom.jpg" /></a>
             <div class="news-articles-text-container-large">
               <a href="">
                 <h3>Cyberpunk 2077 första, och ända, expansion släppt!</h3>
               </a>
-              <!-- Del av ett tag/arkiv system här. tanken är att trycka på nyhet tar användare till nyhetsarkivet
-              samma sak med spel-industri taggen, tar användaren till ett arkiv med alla artiklar som är taggade så-->
-              <a href=""><span>Nyhet</span></a>
-              <a href=""><span>Spel-släpp</span></a>
-              <span class="sidebar-time-stamp">Idag 15:34</span>
+              <div class="article-details">
+                <a href=""
+                  ><span class="article-details-main-tag">Nyhet</span></a
+                >
+                <a href=""><span>Spel-industrin</span></a>
+                <span class="article-details-time">Idag 15:34</span>
+              </div>
               <p>
                 Cyberpunk 2077 har fått sin expansion efter dryga 3 år av
                 väntan. Betygen var höga och CD Projekt Red verkar ha lyckats få
@@ -121,11 +127,13 @@
               <a href="">
                 <h3>El Paso, Elsewhere släppt.</h3>
               </a>
-              <!-- Del av ett tag/arkiv system här. tanken är att trycka på nyhet tar användare till nyhetsarkivet
-              samma sak med spel-industri taggen, tar användaren till ett arkiv med alla artiklar som är taggade så-->
-              <a href=""><span>Nyhet</span></a>
-              <a href=""><span>Spel-släpp</span></a>
-              <span class="sidebar-time-stamp">Idag 15:34</span>
+              <div class="article-details">
+                <a href=""
+                  ><span class="article-details-main-tag">Nyhet</span></a
+                >
+                <a href=""><span>Spel-industrin</span></a>
+                <span class="article-details-time">Idag 15:34</span>
+              </div>
               <p>
                 El Paso, Elsewhere har släppts till höga betyg. Spelet drar
                 inspiration från gamla klassiker som Max Payne men med lite
@@ -136,7 +144,8 @@
         </div>
       </main>
 
-      <!-- SIDEBAR WITH LASTEST NEWS-->
+      <!-- SIDEBAR-->
+      <!--Plats för en reklamplats här?-->
       <aside class="main-sidebar">
         <h3>Senaste Nytt</h3>
         <div>
@@ -150,9 +159,7 @@
               <span class="sidebar-time-stamp">Idag 16:40</span>
             </li>
             <li>
-              <a href="#">
-                Diablo 4 verkar ha tappat en stor del av sin spelarbas
-              </a>
+              <a href="#"> Diablo 4 tappar spelare. </a>
               <span class="sidebar-time-stamp">Idag 16:40</span>
             </li>
             <li>
