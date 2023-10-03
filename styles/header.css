@@ -17,7 +17,6 @@
   background: #272727;
   border-left: 3px solid red;
   height: 8rem;
-
 }
 
 .main-nav ul {
@@ -48,7 +47,7 @@
 .topbar-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 100%;    
+  width: 100%;
   margin: 1rem 0;
   height: 3rem;
 }
@@ -57,20 +56,20 @@
   color: #cacaca;
 }
 
+.search-bar {
+  display: flex;
+}
 .search-bar input {
   border: none;
-  height: 1.2rem;
+  height: 1.7rem;
   background-color: #cacaca;
 }
 
 .search-bar button {
-  margin: 0;
   padding: 0.15rem;
   border: none;
   background: none;
   background-color: #cacaca;
-  
-  
 }
 
 .search-bar i:hover {
@@ -88,10 +87,8 @@
   background-color: rgb(39, 39, 39, 0.5);
   padding: 0.5rem;
   border-radius: 5px;
-
 }
 
 .user-account-buttons a:hover {
   background-color: rgb(39, 39, 39, 1);
-  
 }
