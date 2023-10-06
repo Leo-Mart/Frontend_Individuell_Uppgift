@@ -35,13 +35,15 @@
 }
 
 .main-nav a.active {
-  text-decoration: overline underline;
-  text-decoration-color: red;
+  color: red;
+}
+
+.main-nav a.active:hover {
+  color: #cacaca;
 }
 
 .main-nav a:hover {
-  text-decoration: overline underline;
-  text-decoration-color: red;
+  color: red;
 }
 
 .topbar-wrapper {
