@@ -5,7 +5,6 @@
 
 body {
   background: black;
-  color: white;
 }
 /* CONTAINER WRAPPER STYLING */
 .wrapper {
@@ -16,9 +15,9 @@ body {
     ". content sidebar ."
     ". footer footer. ";
 }
-
+/* Eventuellt ta väck bilder på lägre skärmstorlekar < 500 ?
 /*RESPONSIVE */
-@media (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -29,15 +28,12 @@ body {
       "footer";
   }
 
-  .main-nav ul {
-    font-size: 1.5rem;
-  }
-  /* Varför skriver inte denna över .main-sidebar klassen?
-  Svaret verkar vara att .main-sidebar stylingen helt enkelt kommer senare i dokumentet.
-  Verkar som om det skall gå att fixa med specifity?*/
   .main-sidebar {
     margin-left: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .main-nav ul {
+    font-size: 1.5rem;
   }
 
   .news-article img {

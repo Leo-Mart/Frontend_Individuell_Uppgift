@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--STYLESHEET LINKS-->
     <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/homepage.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/news-article.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
     <link rel="stylesheet" href="styles/newsitem.css" />
+    <link rel="stylesheet" href="styles/homepage.css" />
 
     <!-- IMPORTING ICONS FROM FONT AWESOME-->
     <script
@@ -19,9 +19,8 @@
     ></script>
   </head>
   <!-- Lite generalla tankar/kommentarer. Mycket av layouten är kopierad från fz.se
-  åtminstone de stora dragen. Jag skulle vilja ge mig in på en carousel med bilder men det blir nog bland det sista. 
-  har förstått att det ska gå att göra utan javascript men antar att det är lättare med. 
-  Annars gillar jag tanken med de mindre artikel boxarna som bryts upp ibland av de större. Blicken dras direkt till de stora bilderna när man öppnar sidan
+  åtminstone de stora dragen. 
+  Jag gillar tanken med de mindre artikel boxarna som bryts upp ibland av de större. Blicken dras direkt till de stora bilderna när man öppnar sidan
   så antar att tanken är att det skall vara till stora nyheter/släpp och så vidare-->
   <body>
     <!-- CONTAINER FOR THE LAYOUT-->
@@ -56,39 +55,40 @@
       <main class="main-content">
         <div class="news-articles-container">
           <article class="news-article">
-            <a href=""><img src="images/unity.png" /></a>
+            <!-- Transparent bild funkar inte så bra, men får duga för tillfället-->
+            <a href="news_article.html"><img src="images/unity.png" /></a>
             <div class="news-articles-text-container">
-              <a href="">
+              <a href="news_article.html">
                 <h3>
                   Unity kommer med nya ändrningar till sin betalningsmetod.
                 </h3>
               </a>
               <div class="article-details">
-                <a href=""
-                  ><span class="article-details-main-tag">Nyhet</span></a
-                >
+                <a href="">
+                  <span class="article-details-main-tag">Nyhet</span>
+                </a>
                 <a href=""><span>Spel-industrin</span></a>
                 <span class="article-details-time">Idag 15:34</span>
               </div>
               <p>
-                Efter att Unity släppt en bomb i knät på utvecklare för någon
-                vecka sedan har de nu kommit ut med en ny version av sin
-                betalningsmetod. De nya ändringarna verkar lovande men frågan är
-                om skadan är reden skedd?
+                Efter att Unity annonserat sina kontroversiella ändringar till
+                sin betalningsmetod för någon vecka sedan har de nu kommit ut
+                med en ny version. De nya ändringarna verkar bättre men frågan
+                är om skadan är reden skedd?
               </p>
             </div>
           </article>
 
           <article class="news-article">
-            <a href=""><img src="images/es6.jpg" /></a>
+            <a href="news_article.html"><img src="images/es6.jpg" /></a>
             <div class="news-articles-text-container">
-              <a href="">
+              <a href="news_article.html">
                 <h3>Elder Scrolls 6 släpps tidigast 2026</h3>
               </a>
               <div class="article-details">
-                <a href=""
-                  ><span class="article-details-main-tag">Nyhet</span></a
-                >
+                <a href="">
+                  <span class="article-details-main-tag">Nyhet</span>
+                </a>
                 <a href=""><span>Spel-industrin</span></a>
                 <span class="article-details-time">Idag 15:34</span>
               </div>
@@ -102,15 +102,17 @@
           </article>
 
           <article class="news-article-large">
-            <a href=""><img src="images/cp2077phantom.jpg" /></a>
+            <a href="news_article.html"
+              ><img src="images/cp2077phantom.jpg"
+            /></a>
             <div class="news-articles-text-container-large">
-              <a href="">
+              <a href="news_article.html">
                 <h3>Cyberpunk 2077 första, och ända, expansion släppt!</h3>
               </a>
               <div class="article-details">
-                <a href=""
-                  ><span class="article-details-main-tag">Nyhet</span></a
-                >
+                <a href="">
+                  <span class="article-details-main-tag">Nyhet</span>
+                </a>
                 <a href=""><span>Spel-industrin</span></a>
                 <span class="article-details-time">Idag 15:34</span>
               </div>
@@ -123,15 +125,15 @@
           </article>
 
           <article class="news-article">
-            <a href=""><img src="images/elpaso.jpg" /></a>
+            <a href="news_article.html"><img src="images/elpaso.jpg" /></a>
             <div class="news-articles-text-container">
-              <a href="">
+              <a href="news_article.html">
                 <h3>El Paso, Elsewhere släppt.</h3>
               </a>
               <div class="article-details">
-                <a href=""
-                  ><span class="article-details-main-tag">Nyhet</span></a
-                >
+                <a href="">
+                  <span class="article-details-main-tag">Nyhet</span>
+                  </a>
                 <a href=""><span>Spel-industrin</span></a>
                 <span class="article-details-time">Idag 15:34</span>
               </div>
@@ -210,7 +212,3 @@
     </div>
   </body>
 </html>
-<!--TODO 
-En logga i navbar?
-eventuellt styla om navbar lite och kanske lite mer i footer
--->

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Forum</title>
+    <title>Gaming News</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--STYLESHEET LINKS-->
     <link rel="stylesheet" href="styles/header.css" />
@@ -11,13 +11,18 @@
     <link rel="stylesheet" href="styles/sidebar.css" />
     <link rel="stylesheet" href="styles/newsitem.css" />
     <link rel="stylesheet" href="styles/homepage.css" />
+
     <!-- IMPORTING ICONS FROM FONT AWESOME-->
     <script
       src="https://kit.fontawesome.com/b4437118bd.js"
       crossorigin="anonymous"
     ></script>
   </head>
-
+  <!-- Lite generalla tankar/kommentarer. Mycket av layouten är kopierad från fz.se
+  åtminstone de stora dragen. Jag skulle vilja ge mig in på en carousel med bilder men det blir nog bland det sista. 
+  har förstått att det ska gå att göra utan javascript men antar att det är lättare med. 
+  Annars gillar jag tanken med de mindre artikel boxarna som bryts upp ibland av de större. Blicken dras direkt till de stora bilderna när man öppnar sidan
+  så antar att tanken är att det skall vara till stora nyheter/släpp och så vidare-->
   <body>
     <!-- CONTAINER FOR THE LAYOUT-->
     <div class="wrapper">
@@ -25,7 +30,7 @@
       <header class="main-header">
         <div class="topbar-wrapper">
           <div class="search-bar">
-            <input tpye="text" placeholder="Search..." />
+            <input type="text" placeholder="Search..." />
             <button type="submit"><i class="fa fa-search"></i></button>
           </div>
           <div class="top-bar-logo">
@@ -39,9 +44,9 @@
 
         <nav class="main-nav">
           <ul>
-            <li><a href="homepage.html">Nyheter</a></li>
+            <li><a class="active" href="homepage.html">Nyheter</a></li>
             <li><a href="tester.html">Tester</a></li>
-            <li><a class="active" href="forum.html">Forum</a></li>
+            <li><a href="forum.html">Forum</a></li>
             <li><a href="guides.html">Guider</a></li>
           </ul>
         </nav>
@@ -49,12 +54,28 @@
 
       <!-- MAIN ARTICLE SECTION-->
       <main class="main-content">
-        <div>
-          <h1>HÄR VILL VI HA ETT FORUM</h1>
+        <div class="news-articles-container">
+          <article class="news-article">
+            <a href=""><img src="" /></a>
+            <div class="news-articles-text-container">
+              <a href="">
+                <h3>Här kommer det vara en nyhetsartikel!</h3>
+              </a>
+              <div class="article-details">
+                <a href="">
+                  <span class="article-details-main-tag">Nyhet</span>
+                </a>
+                <a href=""><span>Spel-industrin</span></a>
+                <span class="article-details-time">Idag 15:34</span>
+              </div>
+              <p>Under konstruktion.</p>
+            </div>
+          </article>
         </div>
       </main>
 
-      <!-- SIDEBAR WITH LASTEST NEWS-->
+      <!-- SIDEBAR-->
+      <!--Plats för en reklamplats här?-->
       <aside class="main-sidebar">
         <h3>Senaste Nytt</h3>
         <div>
